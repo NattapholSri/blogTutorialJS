@@ -1,20 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Hello World!
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+  {{ new_attr }}
+  {{ jsonStr }}
+  <ion-item>
+    <ion-label>
+      {{class_arr[0]}}
+    </ion-label>
+    <ion-input [(ngModel)] ="tt_text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{class_arr[1]}}</ion-label>
+    
+  </ion-item>
+<ion-button expand='block' (click)='sayHello()'>
+  First Button
+</ion-button>
+<ion-button fill="outline" (click)='sayHi()'>
+  Click This
+</ion-button>
+<ion-input [(ngModel)]="tt_text"></ion-input>
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Hello an app</strong>
   </div>
 </ion-content>
