@@ -11,7 +11,8 @@ export class HomePage {
   class_arr = [1,2,3,4]
   jsonThings = {
     first: 'value',
-    second: 'obj'
+    second: 'obj',
+    third: 'json'
   }
   jsonStr = JSON.stringify(this.jsonThings);
   constructor() {}

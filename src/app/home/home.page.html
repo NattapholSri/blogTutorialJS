@@ -7,17 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  {{ new_attr }}
-  {{ jsonStr }}
   <ion-item>
     <ion-label>
       {{class_arr[0]}}
     </ion-label>
     <ion-input [(ngModel)] ="tt_text"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label>{{class_arr[1]}}</ion-label>
-    
+  <ion-item *ngFor = "let s of class_arr">
+    <ion-label *ngIF = 3>{{s}}</ion-label>
   </ion-item>
 <ion-button expand='block' (click)='sayHello()'>
   First Button
@@ -25,8 +22,3 @@
 <ion-button fill="outline" (click)='sayHi()'>
   Click This
 </ion-button>
-<ion-input [(ngModel)]="tt_text"></ion-input>
-  <div id="container">
-    <strong>Hello an app</strong>
-  </div>
-</ion-content>
