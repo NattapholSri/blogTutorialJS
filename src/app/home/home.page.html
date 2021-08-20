@@ -7,15 +7,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-label>
-      {{class_arr[0]}}
-    </ion-label>
-    <ion-input [(ngModel)] ="tt_text"></ion-input>
-  </ion-item>
-  <ion-item *ngFor = "let s of class_arr">
-    <ion-label *ngIF = 3>{{s}}</ion-label>
-  </ion-item>
+  <ion-card *ngFor= "let obj of jsonArr">
+    <ion-card-title>{{obj.brand}}</ion-card-title>
+    <ion-card-content>
+      <p>{{obj.model}}</p>
+      <ion-img src="{{obj.pic}}"></ion-img>
+    </ion-card-content>
+  </ion-card>
 <ion-button expand='block' (click)='sayHello()'>
   First Button
 </ion-button>

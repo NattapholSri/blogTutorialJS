@@ -14,7 +14,8 @@ export class HomePage {
     second: 'obj',
     third: 'json'
   }
-  jsonStr = JSON.stringify(this.jsonThings);
+  jsonArr = [{brand:'Apple',model:'Iphone 12',pic:'https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg'},
+  {brand:'Samsung',model:'S21',pic:'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-0.jpg'}]
   constructor() {}
   sayHello() {
     let jsonObj = {
